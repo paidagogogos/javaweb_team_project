@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Upload your File</title>
+        <link rel="stylesheet" href="/css/front.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).on("change", ".file-input", function() {
+                $filename = $(this).val();
+
+                if($filename == "") {
+                    $filename = "파일을 선택해주세요."
+                }
+
+                $(".filename").text($filename);
+            })
+        </script>
+    </head>
+
+    <body>
+        <div id="box3">
+            <form
+            id="form"
+            action="/upload"
+            method="post"
+            enctype="multipart/form-data"
+        >
+            <br><br><br>
+            <div id="box_page" style="height: 200px">
+                <h1>파일 업로드</h1>
+                <div class="box-file-input">
+                    <label>
+                        <input type="file" name="file1" class="file-input"/>
+                    </label>
+                    <span class="filename">파일을 선택해주세요.</span>
+                </div>
+                <br>
+                <button type="submit">업로드</button>
+            </div>
+        </form>
+        </div>
+    </body>
+</html>

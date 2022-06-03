@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Bold';
+    src: url(/font/bold.ttf);
+}
+
+@font-face {
+    font-family: 'SemiBold';
+    src: url(/font/semibold.ttf);
+}
+
+@font-face {
+    font-family: 'Regular';
+    src: url(/font/regular.ttf);
+}
+
+@font-face {
+    font-family: 'Medium';
+    src: url(/font/medium.ttf);
+}
+
+h1 {
+    font-family: 'Bold';
+    font-size: 30px;
+}
+
+h4 {
+    font-family: 'SemiBold';
+    font-size: 18px;
+}
+
+button {
+    width: 70px;
+    height: 35px;
+    font-family: 'SemiBold';
+    color: #FFFFFF;
+    background-color: #038cfd;
+    border: 1px solid #038cfd;
+    border-radius: 5px;
+}
+
+button:active {
+    background-color: #0376d0;
+    border: 1px solid #0376d0;
+}
+
+#box_page {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    padding: 10px 20px 5px 40px;
+    width: 400px;
+    height: 150px;
+    background-color: #FFFFFF;
+    border: 1px solid #d6d6d6;
+    border-radius: 10px;
+}
+
+#box_graph {
+    margin: 0 auto;
+    display: inline-block;
+    padding: 10px 20px 5px 40px;
+    width: 400px;
+    height: 150px;
+    background-color: #FFFFFF;
+    border: 1px solid #d6d6d6;
+    border-radius: 10px;
+}
+
+#box2 {
+    margin: 0 auto;
+    align-items: center;
+    width: 90%;
+    height: 450px;
+    padding: 50px 30px 5px 30px;
+    background-color: #FFFFFF;
+    border: 1px solid #d6d6d6;
+}
+
+#box3 {
+    margin: 0 auto;
+    width: 95%;
+    height: 300px;
+    background-color: #FFFFFF;
+    border: 1px solid #ffffff;
+}
+
+.box-file-input label {
+    display: inline-block;
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid #d6d6d6;
+    color: #494949;
+    font-family: 'Medium';
+    font-size: 14px;
+    padding: 0px 15px;
+    line-height: 35px;
+    cursor: pointer;
+}
+
+.box-file-input label:active {
+    background: #dedede;
+    border: 1px solid #d6d6d6;
+}
+
+.box-file-input label:after {
+    content: "파일 선택";
+}
+
+.box-file-input .file-input {
+    display: none;
+}
+
+.box-file-input .filename {
+    display: inline-block;
+    font-family: 'Regular';
+    padding-left: 10px;
+}

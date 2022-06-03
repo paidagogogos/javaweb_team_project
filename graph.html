@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>Node.js</title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <link rel="stylesheet" href="/css/front.css">
+  </head>
+
+  <body>
+    <div id="box2">
+      <div id="graph" style="width: 100%; height: 400px; margin: 0 auto"></div>
+    </div>
+
+    <br>
+
+    <div id="box3">
+      <h1 style="margin-left: 40px;">단위를 선택해주세요.</h1>
+      <div id="box_graph" style="margin-left: 30px;">
+        <h4>작업 단위</h4>
+        <button onclick="selectTask('Task1')">task1</button>
+        <button onclick="selectTask('Task2')">task2</button>
+        <button onclick="selectTask('Task3')">task3</button>
+        <button onclick="selectTask('Task4')">task4</button>
+        <button onclick="selectTask('Task5')">task5</button>
+      </div>
+
+      <div id="box_graph" style="margin-left: 20px;">
+        <h4>코어 단위</h4>
+        <button onclick="selectCore('core1')">core1</button>
+        <button onclick="selectCore('core2')">core2</button>
+        <button onclick="selectCore('core3')">core3</button>
+        <button onclick="selectCore('core4')">core4</button>
+        <button onclick="selectCore('core5')">core5</button>
+      </div>
+
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="/chart/highcharts.js"></script>
+  <script src="/client/client.js"></script>
+
+ 
+   
+  </script>
+</html>
